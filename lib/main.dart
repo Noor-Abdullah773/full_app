@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'core/themes/app_theme.dart';
 import 'core/veiws/screens/homePage.dart';
 import 'helper/routManager.dart';
 
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-
+     theme: appLigtHteme,
      initialRoute:"/home" ,
      onGenerateRoute: RoutManager.routeManager,
     );
